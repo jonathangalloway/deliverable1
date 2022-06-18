@@ -1,82 +1,99 @@
-@media only screen and (max-width: 768px){
-    p {
-        font-size: 20px;
-      color: #000;
-    
-    }
-    p1 {
-        font-size: 20px;
-      color: #000;
-      
-    }
-     
-     h1{
-        font-size: 40px;
-       
-     }
-    }
-   
-    @media screen and (min-width: 480px) {
-        p1 {
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-        }
-    }
-    h1 {
-    color: #20a8b4;
-}
-div0 {
-    border-color:#fff;
-    border-style: solid;
-    background-color: #F2F2F2;
-}
+h1 {
+  color: #20a8b4;}
 .parent {
-    display: flex;
-  flex-direction: row;
+  border-color: #fff;
+  border-style: solid;
+  background-color: #f2f2f2;
+  flex-direction: column;
+  display: flex;
 }
 .child {
-    display: flex;
-  flex-direction: row;
+  flex-direction: column
 }
-div4:hover{
+.no-bullets {
+  list-style-type: none;
+  flex-direction: column;
+  display: flex;
+}
+li:hover {
   color: #ff5c0f;
-  }
-
+}
+li.contact-us {
+  color: #fff;
+  border-style: solid;
+  background-color: #20a8b4;
+  padding: 12px;
+  border-radius: 10px;
+  border-top: 12px;
+  position: inherit;
+}
+li.contact-us:hover {
+  background-color: #ff5c0f;
+}
 body {
-    background-color: #fff;
-    position: absolute;
-    font-family: "Roboto", sans-serif
-    }
-  img {
-    position: absolute;
-    right: 0;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.learn-more {
+  color: #fff;
+  border-style: solid;
+  background-color: #20a8b4;
+  padding: 12px;
+  border-radius: 10px;
+  border-top: 12px;
+  position: inherit
+}
+.learn-more:hover {
+  background-color: #ff5c0f;
+}
+.image {
+  display: none;
+}
+strong {
+  color: #ff5c0f;
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    display: block;
+    justify-content: flex-end;
   }
 
-  strong { 
-      color: #ff5c0f;
-
+  .parent {
+    border-color: #fff;
+    border-style: solid;
+    background-color: #f2f2f2;
+    flex-direction: row;
+    display: flex;
+  
   }
-  div2 {
-    color: #Fff;
+  .child {
+    flex-direction: row;
+    display: flex;
+    
+  }
+  .no-bullets {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+   
+  }
+  li:hover {
+    color: #ff5c0f;
+  }
+  li.contact-us {
+    color: #fff;
     border-style: solid;
     background-color: #20a8b4;
     padding: 12px;
     border-radius: 10px;
     border-top: 12px;
   }
-  div2:hover{
-    background-color: #ff5c0f;
+  li.contact-us:hover {
+    background-color: #ff5c0f;}
+
   }
-  div3 {
-    color: #Fff;
-    border-style: solid;
-    background-color: #20a8b4;
-    padding: 12px;
-    border-radius: 10px;
-    border-top: 12px;
-  }
-div3:hover{
-    background-color: #ff5c0f;
-  }
- 
+  
+  
+
+
